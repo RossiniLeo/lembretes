@@ -3,6 +3,7 @@ const express = require ('express');
 const app = express();
 app.use(bodyParser.json());
 const lembretes = {};
+contador = 0;
 app.get ('/lembretes', (req, res) => {
   res.send(lembretes);
 });
